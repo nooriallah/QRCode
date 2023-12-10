@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    background: linear-gradient(45deg, darkblue, darkgreen);
+    width: 100%;
+    height: 100vh;
+    display: flex;align-items: center;justify-content: center;
+}
+
+article {
+    width: 500px;
+    /* height: 400px; */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+article h1 {
+    text-align:  center;
+    font-size: 38px;
+    color: #0065f4;
+}
+article .quote {
+    display: block;
+    margin: 2rem 1rem;
+    font-size: 22px;
+    line-height: 32px;
+}
+article .author {
+    text-align: end;
+    margin-right: 1rem; 
+}
+article .bnt-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.bnt-wrapper button {
+    width: 120px;
+    height: 50px;
+border-radius: 5px;
+cursor: pointer;
+}
+.btn_new_quote {
+    border: 0;
+    background-color: #1978fc;
+    color: white;
+}
+.btn_new_quote:hover {
+    background-color: #0065f4;
+}
+.btn_tweet {
+    border: 1px solid #1978fc;
+    color: #1978fc;
+}
+
+@media only screen and (width <= 768px) {
+    article {
+        margin: 0 1rem;
+        padding: 3rem 1rem;
+    }
+    article h1 {
+        font-size: 28px;
+        text-align: start;
+    }
+    article .quote {
+        font-size: 18px;
+        text-align: start;
+        margin: 2rem 0;
+    }
+}
+
+
+
+
+
+
